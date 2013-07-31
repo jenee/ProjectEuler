@@ -9,16 +9,27 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 '''
 
 #store firstVal (1)
+firstVal = 1
 #store secondVal (2)
+secondVal = 2
 
-#store sum = secondVal
+#store fibsum = secondVal
+fibsum = 2
 
 # while secondVal < 4 million
+while secondVal < 4000000:
 # # nextVal = firstVal + secondVal
+   nextVal = firstVal + secondVal
 # # if nextVal % 2 == 0
-# # # add nextVal to sum
+   if nextVal % 2 == 0:
+# # # add nextVal to fibsum
+      fibsum += nextVal
 # # Set firstVal to secondVal
+   firstVal = secondVal
 # # set secondVal to nextVal
+   secondVal = nextVal
 
-# print sum
+# print fibsum
+
+print fibsum
 
