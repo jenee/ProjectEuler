@@ -7,7 +7,11 @@
 sum = 0
 
 # loop i through 1 to < 1000
+for i in range(1000):
 # # if  i % 3 is 0 or i % 5 is zero
+   if i % 3 == 0 or i % 5 == 0:
 # # # add i
+      sum += i
 
 # print sum
+print sum
