@@ -16,12 +16,12 @@ def isDivisibleByAll20(num):
 
 # create an array of length 20, initialized to zero
 
-commonFactorCount = [0] * 20
+commonFactorCount = [0] * 21
 
 
 #factor all numbers below 20.
 for i in range(2,21):
-   curFactorCount = [0] * 20;
+   curFactorCount = [0] * 21;
    print "factors of"+str(i)+":",
    iTemp = i
    for factor in range(2,iTemp+1):
@@ -30,7 +30,7 @@ for i in range(2,21):
          curFactorCount[factor] += 1
          iTemp = iTemp / factor
    print ""
-   for factor in range(2,i):
+   for factor in range(2,i+1):
       if curFactorCount[factor] > commonFactorCount[factor]:
          commonFactorCount[factor] = curFactorCount[factor]
 
@@ -41,7 +41,7 @@ for i in range(20):
       smallestMultiple *= i*commonFactorCount[i]
 
 print smallestMultiple
-
+print isDivisibleByAll20(smallestMultiple)
 
 # count the numbers in each factor, putin hash table
 
