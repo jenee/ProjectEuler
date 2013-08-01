@@ -31,6 +31,7 @@ for i in range(2,21):
          iTemp = iTemp / factor
    print ""
    for factor in range(2,i+1):
+   # count the numbers in each factor, put in array
       if curFactorCount[factor] > commonFactorCount[factor]:
          commonFactorCount[factor] = curFactorCount[factor]
 
@@ -38,14 +39,13 @@ smallestMultiple = 1
 for i in range(20):
    print "["+str(i)+"] = "+ str(commonFactorCount[i])
    if commonFactorCount[i] > 0:
+   #multiply all the stuff in the array together
       smallestMultiple *= i*commonFactorCount[i]
 
 print smallestMultiple
 print isDivisibleByAll20(smallestMultiple)
 
-# count the numbers in each factor, putin hash table
 
-#multiply all the stuff in the hash table together. 
 
 # that's near linear-ish. Not quadratic anyway.
 
