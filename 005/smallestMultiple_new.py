@@ -41,15 +41,14 @@ for i in range(20):
    if commonFactorCount[i] > 0:
    #multiply all the stuff in the array together
       multiplyBy = i ** commonFactorCount[i]
-      print multiplyBy
+      #print multiplyBy
       smallestMultiple *= multiplyBy 
 
 print smallestMultiple
-print isDivisibleByAll20(smallestMultiple)
+#print isDivisibleByAll20(smallestMultiple)
 
 
 
-# that's near linear-ish. Not quadratic anyway.
 
 
 
