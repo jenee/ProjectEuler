@@ -13,7 +13,7 @@ def isDivisibleByAll20(num):
       if (num % i) != 0:
          retVal = False
    return retVal
-# create a hash table with all primes below 20.
+
 # create an array of length 20, initialized to zero
 
 commonFactorCount = [0] * 20
@@ -33,6 +33,15 @@ for i in range(2,21):
    for factor in range(2,i):
       if curFactorCount[factor] > commonFactorCount[factor]:
          commonFactorCount[factor] = curFactorCount[factor]
+
+smallestMultiple = 1
+for i in range(20):
+   print "["+str(i)+"] = "+ str(commonFactorCount[i])
+   if commonFactorCount[i] > 0:
+      smallestMultiple *= i*commonFactorCount[i]
+
+print smallestMultiple
+
 
 # count the numbers in each factor, putin hash table
 
