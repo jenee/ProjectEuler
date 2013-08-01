@@ -9,7 +9,7 @@ What is the smallest positive number that is evenly divisible by all of the numb
 
 def isDivisibleByAll20(num):
    retVal = True
-   for i in range(1,21):
+   for i in xrange(1,21):
       if (num % i) != 0:
          retVal = False
    return retVal
