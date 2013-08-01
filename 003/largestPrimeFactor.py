@@ -19,14 +19,16 @@ maxPrimeFactor = 2
 # minMaxPrimeFactor = 600851475143 / 2
 minMaxPrimeFactor = baseNum / 2
 
-while curDivisor < minMaxPrimeFactor and baseNum > minMaxPrimeFactor:
+while curDivisor < minMaxPrimeFactor and baseNum > maxPrimeFactor:
    if baseNum % curDivisor == 0:
       tempBase = baseNum / curDivisor
+      print "curDiv="+str(curDivisor)+", tempBase="+str(tempBase)
       if curDivisor > maxPrimeFactor:
          maxPrimeFactor = curDivisor
       baseNum = tempBase
       curDivisor = 2
    else:
+      print curDivisor
       curDivisor += 1
    
 print maxPrimeFactor
