@@ -14,8 +14,7 @@ def isDivisibleByAll20(num):
          retVal = False
    return retVal
 
-# create an array of length 20, initialized to zero
-
+# create an array of length 21, initialized to zero
 commonFactorCount = [0] * 21
 
 
