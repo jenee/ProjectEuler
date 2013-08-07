@@ -16,7 +16,7 @@ def product(listofnums):
 maxProduct = 0
 
 for i in range(len(series)-4):
-   nums = { series[i],series[i+1],series[i+2],series[i+3],series[i+4] }
+   nums = [ series[i],series[i+1],series[i+2],series[i+3],series[i+4] ]
    curProd = product(nums),
    '''
    print " 1:"+ str(i),
