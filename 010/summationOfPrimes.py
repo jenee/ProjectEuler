@@ -26,3 +26,5 @@ for possiblePrime in allPossiblePrimes:
          allPossiblePrimes.remove(multiple)
       print len(allPossiblePrimes)
 print sumOfPrimes
+
+#too slow. Might want to look into a combinatorics solution?
